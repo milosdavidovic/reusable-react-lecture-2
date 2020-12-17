@@ -1,0 +1,68 @@
+:root {
+  --color-dark: rgba(0, 0, 0, 0.6);
+  --color-brand: #85b7d9;
+  --border-color: rgba(34, 36, 38, 0.15);
+}
+
+.label {
+  color: var(--color-dark);
+  padding: 0;
+}
+
+.bgDark {
+  background: #e8e8e8;
+}
+
+.container {
+  display: flex;
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.container:focus-within .inputGroupItem {
+  border-color: var(--color-brand);
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  color: var(--color-dark);
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  background: 0;
+  padding: 12px 0;
+  font-family: sans-serif;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.inputGroupItem {
+  color: var(--color-dark);
+  border-left: 0;
+  border-right: 0;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.inputGroupItem:first-child {
+  border-left: 1px solid var(--border-color);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.inputGroupItem:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-right: 1px solid var(--border-color);
+  padding-right: 4px;
+}
